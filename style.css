@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     letter-spacing: 1px;
-    background-color: #0c1022;
+    background-color: #0c1022  !important;
 }
 .loginContainer {
     position: relative;
@@ -136,4 +136,37 @@ a {
 }
 .forgetButton a:hover {
     opacity: 0.7;
+}
+.signupbutton {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 56%;
+    z-index: 11;
+    bottom: 21%;
+    border: none;
+    background: none;
+    color: #00ccff !important;
+}
+
+.signupbutton:hover {
+    background: none;
+    opacity: 0.8;
+}
+
+
+
+
+.dateOfBirth{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
 }
