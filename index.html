@@ -51,30 +51,41 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">SignUp</h5>
+          <h5 class="modal-title"  id="staticBackdropLabel">SignUp</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <!-- FORM -->
 
         <form>
-            <div>
+            <div class="inputDiv firstnameDiv">
+              <label for="Date-Of-Birth" class="col-form-label">First name:</label>
                 <input type="text"   placeholder="First name">
-                <input type="text" placeholder="First name " style="color: black !important;" >
+              
+            </div>
+            <div class="lastnameDiv">
+              <label for="Date-Of-Birth" class="col-form-label">last name:</label>
+              <input type="text" placeholder="Sur name " style="color: black !important;" >
             </div>
 
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="mb-3 inputDiv emailDiv">
+              <label for="Date-Of-Birth" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp">
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-<!-- 
-            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-<button type="button" class="btn btn-outline-success">Success</button -->
 
-            <div class="dateOfBirth">
+            <div class="mb-3 inputDiv passDiv" >
+              <label for="Date-Of-Birth" class="col-form-label">Password:</label>
+              <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3 inputDiv">
+              <label for="Date-Of-Birth" class="col-form-label">Date of birth:</label>
+              <input type="date" class="form-control" id="dateOfBirth">
+          </div>
+
+
+
+        
+            <!-- <div class="dateOfBirth">
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                      Date
@@ -120,18 +131,26 @@
 
                   
 
-            </div>
+            </div> -->
 
             <div class="row">
-                <p>Gender</p>
                 <div class="col">
-                    <button type="button" class="btn btn-outline-primary">Male</button>
+                  <div class="mb-3 inputDiv">
+                    <label for="Gender" class="col-form-label d-block gender">Gender:</label>
+                    <div class="maingender">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                            id="genderMale" value="option1" onclick="genderHandler('Male')">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                            id="genderfemale" value="option2" onclick="genderHandler('Female')">
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                  </div>
                 </div>
-                <div class="col">
-                    <button type="button" class="btn btn-outline-primary">Female</button>
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-outline-primary">Custom</button>
+
                 </div>
 
             </div>
