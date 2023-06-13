@@ -17,14 +17,14 @@
             <h1 class="login">Login</h1>
             <div class="InputGroup">
                 <i class="fa fa-solid fa-user" style="color: #1fd2ff;"></i>
-                <input class="input" type="text" placeholder="username">
+                <input class="input" type="text"  placeholder="username" id="email">
             </div>
             <div class="InputGroup">
                 <i class="fa fa-solid fa-lock" style="color: #24c8ff;"></i>
-                <input class="input" type="password'" placeholder="password">
+                <input class="input" type="password"  placeholder="password" id="password">
             </div>
          <div id="submitButton">
-            <a href="#">Login</a>
+            <a href="#" id="login"> Login</a>
          </div>
          <div class="forgetButton signup">
             <a href="#">Forget Password</a>
@@ -58,29 +58,30 @@
 
         <form>
             <div class="inputDiv firstnameDiv">
-              <label for="Date-Of-Birth" class="col-form-label">First name:</label>
-                <input type="text"   placeholder="First name">
+              <label for="reciepent_name " class="col-form-label">First name:</label>
+                <input type="text"   placeholder="First name" id="recipient_name">
               
             </div>
             <div class="lastnameDiv">
-              <label for="Date-Of-Birth" class="col-form-label">last name:</label>
-              <input type="text" placeholder="Sur name " style="color: black !important;" >
+              <label for="recipient_surname" class="col-form-label">last name:</label>
+              <input type="text" placeholder="Sur name " id="recipient_surname"   style="color: black !important;" >
             </div>
 
-            <div class="mb-3 inputDiv emailDiv">
-              <label for="Date-Of-Birth" class="col-form-label">Email:</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp">
-            </div>
+        
+              <label for="email-address" class="col-form-label">Email address:</label>
+              <input type="email" placeholder="Email address" class="form-control" id="recipent_email">
+          
 
             <div class="mb-3 inputDiv passDiv" >
-              <label for="Date-Of-Birth" class="col-form-label">Password:</label>
-              <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+              <label for="password" class="col-form-label">Password:</label>
+              <input type="password" placeholder="Password" class="form-control" id="reciepent_pass">
             </div>
 
             <div class="mb-3 inputDiv">
               <label for="Date-Of-Birth" class="col-form-label">Date of birth:</label>
               <input type="date" class="form-control" id="dateOfBirth">
           </div>
+         
 
 
 
@@ -157,29 +158,12 @@
 
           </form>
 
-
-                        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="emptyInput()">Close</button>
+            <button type="submit" class="btn btn-primary submit-btn" id="signup" onclick="signupHandler()">Create Acount</button>
         </div>
+      </div>
       </div>
     </div>
   </div>
