@@ -1,52 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-boxS;
-}
-body{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 1px;
-    background-color: #0c1022  !important;
-}
-.loginContainer {
-    position: relative;
-    width: 400px;
-    height: 470px;
-    max-width: 400px;
-    max-height: 470px;
-    background: #040717;
-    border-radius: 50px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: 70px;
-}
-.loginContainer::before{
-    
-    position: absolute;
-    width: 170%;
-    height: 170%;
-    content: '';
-    background-image: conic-gradient(transparent, transparent, transparent, #ee00ff);
-    animation: rotate_border 6s linear infinite;
-
-}
-.loginContainer::after{
-    
-    position: absolute;
-    width: 170%;
-    height: 170%;
-    content: '';
-    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
-    animation: rotate_border 6s linear infinite;
-    animation-delay: -3s;
-}
-
+*{    margin: 0;    padding: 0;    box-sizing: border-boxS;}
+body{    width: 100%;    height: 100%;    display: flex;    justify-content: center;    align-items: center;    letter-spacing: 1px;    background-color: #0c1022  !important;}
+.loginContainer {    position: relative;    width: 400px;    height: 470px;    max-width: 400px;    max-height: 470px;    background: #040717;    border-radius: 50px 5px;    display: flex;    align-items: center;    justify-content: center;    overflow: hidden;    margin-top: 70px;}
+.loginContainer::before{    position: absolute;    width: 170%;    height: 170%;    content: '';    background-image: conic-gradient(transparent, transparent, transparent, #ee00ff); animation: rotate_border 6s linear infinite;}
+.loginContainer::after{    position: absolute; width: 170%;    height: 170%;    content: '';    background-image: conic-gradient(transparent, transparent, transparent, #00ccff); animation: rotate_border 6s linear infinite;animation-delay: -3s;}
 @keyframes rotate_border{
     0%{
         transform: rotate(0deg);
@@ -55,282 +11,52 @@ body{
         transform: rotate(360deg);
     }
 }
-
-.loginForm{
-    position: absolute;
-    content: '';
-    background-color: #0c1022;
-    border-radius: 50px 5px;
-    inset: 5px;
-    padding: 50px 40px;
-    z-index: 10;
-    color: #00ccff;
-}
-.login{
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 70px;
-}
-
+.loginForm{    position: absolute;    content: '';    background-color: #0c1022;    border-radius: 50px 5px;   inset: 5px;    padding: 50px 40px;    z-index: 10;    color: #00ccff;}
+.login{    font-size: 40px;    font-weight: 600;    text-align: center;    margin-bottom: 70px;}
 .InputGroup {margin-top: 40px;display: flex;text-align: center;align-items: center;justify-content: flex-start;}
-
-.input{
-    width: 95%;
-    height: 30px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #00ccff;
-    font-size: 20px;
-    padding-left: 10px;
-    color: #00ccff;
-
-}
-.loginForm ::placeholder{
-    font-size: 15px !important;
-    color: #00ccff52 !important;
-    letter-spacing: 1px !important;
-
-}
-#submitButton{
-    position: relative;
-    width: 300px;
-    height: 40px;
-    transition: 1s;
-    margin-top: 70px;
-}
-#submitButton a{
-position: absolute;
-width: 100%;
-height: 100%;
-text-decoration: none;
-z-index: 10;
-cursor: pointer;
-font-size: 22px;
-letter-spacing: 2px;
-border: 1px solid #00ccff;
-border-radius: 50px;
-background-color: #0c1022;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-#submitButton a:hover {
-    background-color: #00ccff;
-    color: white;
-    transition: 1s;
-}
-
-a {
-    color: #00ccff !important;
-}
-.forgetButton{
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-.forgetButton a {
-    text-decoration: none;
-}
-.forgetButton a:hover {
-    opacity: 0.7;
-}
+.input{    width: 95%;    height: 30px;    background: transparent;   border: none;    outline: none;   border-bottom: 1px solid #00ccff;font-size: 20px;    padding-left: 10px;  color: #00ccff;}
+.loginForm ::placeholder{    font-size: 15px !important;  color: #00ccff52 !important;    letter-spacing: 1px !important;}
+#submitButton{   position: relative;  width: 300px;  height: 40px;  transition: 1s;   margin-top: 70px;}
+#submitButton a{position: absolute;width: 100%;height: 100%;text-decoration: none;z-index: 10;cursor: pointer;font-size: 22px;letter-spacing: 2px;border: 1px solid #00ccff;border-radius: 50px;background-color: #0c1022;display: flex;justify-content: center;align-items: center;}
+#submitButton a:hover {  background-color: #00ccff;  color: white;  transition: 1s;}
+a { color: #00ccff !important;}
+.forgetButton{ margin-top: 30px;  display: flex; justify-content: space-between;}
+.forgetButton a {text-decoration: none;}
+.forgetButton a:hover { opacity: 0.7;}
 
 
 
 
 /* signup */
-.signupbutton {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 56%;
-    z-index: 11;
-    bottom: 21%;
-    border: none !important;
-    background: none !important;
-    color: #00ccff !important;
-}
-
-
-
-
-.signupbutton:hover {
-    background: none !important;
-    opacity: 0.8;
-}
-
-
-
-
-.dateOfBirth{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-
-.modal-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
-}
-
-
-
-.modal-content {
-    background: #0c1022;}
-
-.InputDiv
-    {margin-top: 40px;text-align: center;align-items: center;justify-content: flex-start;}
-
-#staticBackdropLabel {
-        display: flex;
-        justify-content: center !important;
-        align-items: center !important;
-        text-align: center;
-        margin-left: auto;
-    }
-
-.firstnameDiv {
-        /* display: flex;
-        justify-content: space-around; */
-        margin-bottom: 4%;
-        border: none !important;
-    }
-.lastnameDiv {
-        /* display: flex;
-        justify-content: space-around; */
-        margin-bottom: 4%;
-        border: none !important;
-    }
-.lastnameDiv input {
-        border: 1px solid #555;
-        padding: 11px;
-        border-radius: 10px;
-        width: 95%;
-        font-size: 15px;
-        line-height: 16px;
-        margin-left: 2%;
-    }
-
-
-    
-.firstnameDiv input {
-        border: 1px solid #555;
-        padding: 11px;
-        border-radius: 10px;
-        width: 95%;
-        font-size: 15px;
-        line-height: 16px;
-        margin-left: 2%;
-    }
-
-.emailDiv {
-        /* display: flex; */
-        justify-content: center;
-    }
-    
-#recipent_email {
-        border: 1px solid #555;
-        padding: 11px;
-        border-radius: 10px;
-        width: 95%;
-        font-size: 15px;
-        line-height: 16px;
-        margin-left: 2%;
-    }
-    
-#recipent_email:focus {
-        border: 2px solid aqua !important;
-        box-shadow: none;
-    }
-
-.passDiv input {
-    border: 1px solid #555;
-    padding: 11px;
-    border-radius: 10px;
-    width: 95%;
-    font-size: 15px;
-    line-height: 16px;
-    margin-left: 2%;
-}
-
-.passDiv input:focus {
-    border: 2px solid aqua !important;
-    box-shadow: none;
-}
-#dateOfBirth  {
-    border: 1px solid #555;
-    padding: 11px;
-    border-radius: 10px;
-    width: 95%;
-    font-size: 15px;
-    line-height: 16px;
-    margin-left: 7px !important;
-}
-#dateOfBirth:focus {
-    border: 2px solid aqua !important;
-    box-shadow: none;
-}
-
-.col-form-label {
-    margin-left: 8px !important;
-}
-    
-.maingender {
-    margin-left: 38px;
-}
-
-.modal-footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-#staticBackdropLabel {
-    font-size: 36px;
-}
-
-#staticBackdrop {
-    background-color: #0c1022 !important ;
-}
-
-.modal-content {
-    border: 2px solid aqua !important;
-    background-color: #0c1022 !important;
-}
-
-.modal-content label {
-    color: aqua;
-}
-
-#staticBackdropLabel {
-    color: aqua;
-}
-
-
-
-.btn-close {
-    background-color: white !important;
-}
-
-
-.modal-footer {
-    display: flex !important;
-    justify-content: space-around !important;
-}
-
-.modal-footer button {
-    background-color: transparent;
-    border: 2px solid aqua;
-    color: aqua;
-}
-
-.modal-footer button:hover {
-    background-color: aqua;
-    color: #0c1022 !important;
-}
+.signupbutton { justify-content: center;  display: flex;   align-items: center;   position: absolute;  left: 56%;  z-index: 11;  bottom: 21%;  border: none !important;  background: none !important;  color: #00ccff !important;}
+.signupbutton:hover { background: none !important; opacity: 0.8;}
+.dateOfBirth{  display: flex;  justify-content: space-around;  margin-bottom: 30px;}
+.modal-footer { display: flex; justify-content: center; align-items: center; margin-top: 24px;}
+.modal-content { background: #0c1022;}
+.InputDiv  {margin-top: 40px;text-align: center;align-items: center;justify-content: flex-start;}
+#staticBackdropLabel {  display: flex;  justify-content: center !important;  align-items: center !important; text-align: center;  margin-left: auto;  }
+.firstnameDiv {  margin-bottom: 4%; border: none !important; }
+.lastnameDiv { margin-bottom: 4%; border: none !important; }
+.lastnameDiv input {  border: 1px solid #555;  padding: 11px;  border-radius: 10px;   width: 95%;   font-size: 15px;  line-height: 16px;margin-left: 2%;}    
+.firstnameDiv input {  border: 1px solid #555;  padding: 11px;  border-radius: 10px; width: 95%; font-size: 15px;   line-height: 16px;    margin-left: 2%;  }
+.emailDiv {   justify-content: center;}
+#recipient_name:focus { border: 1px solid aqua !important; outline: none;}
+#recipient_surname:focus {  border: 1px solid aqua !important;  outline: none;}
+#recipent_email { border: 1px solid #555;   padding: 11px;   border-radius: 10px; width: 95%;  font-size: 15px;  line-height: 16px;margin-left: 2%;}
+#recipent_email:focus { border: 2px solid aqua !important;    box-shadow: none; }
+.passDiv input { border: 1px solid #555;  padding: 11px; border-radius: 10px;  width: 95%;font-size: 15px;    line-height: 16px;  margin-left: 2%;}
+.passDiv input:focus { border: 2px solid aqua !important;  box-shadow: none;}
+#dateOfBirth  { border: 1px solid #555; padding: 11px;  border-radius: 10px; width: 95%;  font-size: 15px;  line-height: 16px; margin-left: 7px !important;}
+#dateOfBirth:focus { border: 2px solid aqua !important;  box-shadow: none;}
+.col-form-label { margin-left: 8px !important;} 
+.maingender { margin-left: 38px;}
+.modal-footer { display: flex;justify-content: center; text-align: center;}
+#staticBackdropLabel { font-size: 36px;}
+#staticBackdrop { background-color: #0c1022 !important ;}
+.modal-content { border: 2px solid aqua !important;  background-color: #0c1022 !important;}
+.modal-content label { color: aqua;}
+#staticBackdropLabel { color: aqua;}
+.btn-close { background-color: white !important;}
+.modal-footer { display: flex !important; justify-content: space-around !important;}
+.modal-footer button {  background-color: transparent;  border: 2px solid aqua;  color: aqua;}
+.modal-footer button:hover { background-color: aqua; color: #0c1022 !important;}
